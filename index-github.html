@@ -1,0 +1,37 @@
+<!-- Замени USERNAME, REPO и BRANCH на свои.
+     Через jsDelivr (рекомендуется, есть CDN-кеш и правильный content-type):
+     https://cdn.jsdelivr.net/gh/USERNAME/REPO@BRANCH/images/light-1.png
+     Через raw.githubusercontent.com:
+     https://raw.githubusercontent.com/USERNAME/REPO/BRANCH/images/light-1.png -->
+<div class="stage" id="stage">
+
+  <span class="label light" id="lblLight">Light</span>
+  <span class="label dark" id="lblDark">Dark</span>
+
+  <!-- Light layer -->
+  <div class="layer light">
+    <div class="phone"><div class="screen"><img src="https://cdn.jsdelivr.net/gh/USERNAME/REPO@main/images/light-1.png" alt=""></div><div class="home-bar"></div></div>
+    <div class="phone"><div class="screen"><img src="https://cdn.jsdelivr.net/gh/USERNAME/REPO@main/images/light-2.png" alt=""></div><div class="home-bar"></div></div>
+    <div class="phone"><div class="screen"><img src="https://cdn.jsdelivr.net/gh/USERNAME/REPO@main/images/light-3.png" alt=""></div><div class="home-bar"></div></div>
+    <div class="phone"><div class="screen"><img src="https://cdn.jsdelivr.net/gh/USERNAME/REPO@main/images/light-4.png" alt=""></div><div class="home-bar"></div></div>
+  </div>
+
+  <!-- Dark layer, clipped by JS -->
+  <div class="layer dark" id="darkLayer" style="clip-path: inset(0 0 0 50%);">
+    <div class="phone"><div class="screen"><img src="https://cdn.jsdelivr.net/gh/USERNAME/REPO@main/images/dark-1.png" alt=""></div><div class="home-bar"></div></div>
+    <div class="phone"><div class="screen"><img src="https://cdn.jsdelivr.net/gh/USERNAME/REPO@main/images/dark-2.png" alt=""></div><div class="home-bar"></div></div>
+    <div class="phone"><div class="screen"><img src="https://cdn.jsdelivr.net/gh/USERNAME/REPO@main/images/dark-3.png" alt=""></div><div class="home-bar"></div></div>
+    <div class="phone"><div class="screen"><img src="https://cdn.jsdelivr.net/gh/USERNAME/REPO@main/images/dark-4.png" alt=""></div><div class="home-bar"></div></div>
+  </div>
+
+  <!-- Divider & handle -->
+  <div class="divider" id="divider"></div>
+  <div class="handle" id="handle" style="left: 50%;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+      <path d="M9 6l-4 6 4 6" stroke="#14181F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M15 6l4 6-4 6" stroke="#14181F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </div>
+
+  <span class="hint" id="hint">← потяните, чтобы сравнить →</span>
+</div>
